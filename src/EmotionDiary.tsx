@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { format } from "date-fns";
 
-// 감정 데이터 타입 정의
 type Emotion = {
   label: string;
   color: string;
   name: string;
 };
 
-// 감정 리스트
 const emotions: Emotion[] = [
   { label: "😊", color: "bg-yellow-300", name: "うれしい" },
   { label: "😢", color: "bg-blue-300", name: "かなしい" },
@@ -17,7 +15,6 @@ const emotions: Emotion[] = [
   { label: "😰", color: "bg-purple-300", name: "ふあん" },
 ];
 
-// 일기 저장 구조 타입
 type EmotionLog = {
   emotion: Emotion;
   text: string;
